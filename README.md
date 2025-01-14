@@ -24,3 +24,5 @@ Brief Description:
 
 
 Peer Review:
+Alan Batres
+"All of the code runs perfectly with no errors and the model works well and lets me change the text. Great Job."
