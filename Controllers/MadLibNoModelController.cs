@@ -19,7 +19,7 @@ namespace AllForOneAPI.Controllers
         }
 
         [HttpGet]
-        [Route("MadLib")]
+        [Route("MadLib/animal1/container1/leastFavColor/bodyCovering/verb1/favoriteThing/favoriteFood/activityToDo/changeAppearance/favColor")]
         public string MadLib(string animal1, string container1, string leastFavColor, string bodyCovering, string verb1, string favoriteThing, string favoriteFood, string activityToDo, string changeAppearance, string favColor)
         {
             return _madLibNoModelServices.MadLib(animal1, container1, leastFavColor, bodyCovering, verb1, favoriteThing, favoriteFood, activityToDo, changeAppearance, favColor);
