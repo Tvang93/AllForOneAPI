@@ -20,14 +20,14 @@ namespace AllForOneAPI.Services
                         reversedNum += convertedNum * -1 % 10;
                         convertedNum /= 10;
                 }
-                return $"The number you entered was: {stringNum} and reversed is: {reversedNum}-.";
+                return $"The number you entered was '{stringNum}' and reversed is '{reversedNum}-'.";
                 }else{
                     for(int i = stringNum.Length - 1; i >= 0; i--)
                 {
                         reversedNum += convertedNum % 10;
                         convertedNum /= 10;
                 }
-                return $"The number you entered was: {stringNum} and reversed is: {reversedNum}.";
+                return $"The number you entered was '{stringNum}' and reversed is '{reversedNum}'.";
                 }
             }else{
                 return "Invalid Entry. Please type in a number.";
