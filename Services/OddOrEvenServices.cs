@@ -14,9 +14,9 @@ namespace AllForOneAPI.Services
 
             if(validNum){
                 if(convertedNum % 2 == 0){
-                return $"The number you entered: {num1} is an even number.";
+                return $"The number you entered '{num1}' is an even number.";
                 }else{
-                return $"The number you entered: {num1} is an odd number.";
+                return $"The number you entered '{num1}' is an odd number.";
                 }
             }else{
                 return "Invalid Entry. Please type in a number.";
