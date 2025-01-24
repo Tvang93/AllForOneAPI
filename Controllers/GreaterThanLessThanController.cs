@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AllForOneAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class GreaterThanLessThanController : ControllerBase
     {
         private readonly GreaterThanLessThanServices _greaterThanLessThan;
@@ -19,7 +19,7 @@ namespace AllForOneAPI.Controllers
 
         [HttpGet]
         [Route("GreaterThanLessThan/{num1}/{num2}")]
-        public string GreaterThanLessThan(int num1, int num2)
+        public string GreaterThanLessThan(string num1, string num2)
         {
             return _greaterThanLessThan.GreaterThanLessThan(num1, num2);
         }
