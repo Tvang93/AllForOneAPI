@@ -14,7 +14,7 @@ namespace AllForOneAPI.Services
             {
                 reversedString += string1[i];
             }
-            return $"You've entered: {string1}. Reversed it is: {reversedString}.";
+            return $"You've entered '{string1}'. Reversed it is '{reversedString}'.";
         }
     }
 }
