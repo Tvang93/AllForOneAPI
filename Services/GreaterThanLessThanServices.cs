@@ -14,7 +14,7 @@ namespace AllForOneAPI.Services
             bool validNum1 = int.TryParse(num1, out int convertedNum1);
             bool validNum2 = int.TryParse(num2, out int convertedNum2);
             if(!validNum1 && !validNum2){
-                return $"The first number '{num1}' and the second number '{num2}' are both invalid. PLease type in a valid number in for both.";
+                return $"The first number '{num1}' and the second number '{num2}' are both invalid. Please type in a valid number in for both.";
             }else if(!validNum1 && validNum2){
                 return $"The first number '{num1}' is an invaild number. Please type in a valid number for your first number";
             }else if(validNum1 && !validNum2){
@@ -22,16 +22,16 @@ namespace AllForOneAPI.Services
             }
             
             if(convertedNum1 == convertedNum2){
-                firstStatement = $"Your first number '{num1}' is equal to your second number '{num2}'.";
-                secondStatement = $"Your second number '{num2}' is equal to your first number '{num1}'.";
+                firstStatement = $"Your first num '{num1}' is equal to your second num '{num2}'.";
+                secondStatement = $"Your second num '{num2}' is equal to your first num '{num1}'.";
                 return firstStatement + secondStatement;
             }else if(convertedNum1 > convertedNum2){
-                firstStatement = $"Your first number '{num1}' is greater than your second number '{num2}'.";
-                secondStatement = $"Your second number '{num2}' is less than your first number '{num1}'.";
+                firstStatement = $"Your first num '{num1}' is greater than your second num '{num2}'.";
+                secondStatement = $"Your second num '{num2}' is less than your first num '{num1}'.";
                 return firstStatement + secondStatement;
             }else{
-                firstStatement = $"Your first number '{num1}' is less than your second number '{num2}'.";
-                secondStatement = $"Your second number '{num2}' is greater than your first number '{num1}'.";
+                firstStatement = $"Your first num '{num1}' is less than your second num '{num2}'.";
+                secondStatement = $"Your second num '{num2}' is greater than your first num '{num1}'.";
                 return firstStatement + secondStatement;
             }
         }
