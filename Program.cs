@@ -19,6 +19,7 @@ builder.Services.AddScoped<RestaurantPickerServices>();
 builder.Services.AddScoped<ReverseItAlphanumericalServices>();
 builder.Services.AddScoped<ReverseItNumbersServices>();
 builder.Services.AddScoped<GreaterThanLessThanServices>();
+builder.Services.AddScoped<MadLibNoModelServices>();
 builder.Services.AddCors(options => {
     options.AddPolicy("AllowAll", 
     policy => {
