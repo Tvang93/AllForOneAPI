@@ -18,6 +18,7 @@ builder.Services.AddScoped<OddOrEvenServices>();
 builder.Services.AddScoped<RestaurantPickerServices>();
 builder.Services.AddScoped<ReverseItAlphanumericalServices>();
 builder.Services.AddScoped<ReverseItNumbersServices>();
+builder.Services.AddScoped<GreaterThanLessThanServices>();
 
 var app = builder.Build();
 
